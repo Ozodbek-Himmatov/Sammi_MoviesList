@@ -1,0 +1,24 @@
+.btn-group {
+  margin-top: 1.5rem;
+  margin-left: 0.1px;
+  box-shadow: 4px 5px rgba(0, 0, 0, 0.17);
+  --bs-border-radius: 0;
+}
+
+.btn-group .btn + .btn {
+  border-left: 0;
+}
+
+.bounce-effect {
+  animation: bounceClick 0.2s ease-in-out;
+}
+
+@keyframes bounceClick {
+  0%,
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+  75% {
+    transform: translateX(4px) translateY(5px);
+  }
+}
